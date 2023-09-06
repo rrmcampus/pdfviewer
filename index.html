@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="floating-button">
+        <a href="your-download-link.pdf" download>
+            <button>Download</button>
+        </a>
+    </div>
+  
+    <header>        
+            <div class="topnav" id="myTopnav">
+
+                <a href="">First Semester</a>
+                <a href="">Second Semester</a>
+                <a href="">Third Semester</a>
+                <a href="">Fourth Semester</a>
+                <a href="">Fifth Semester</a>
+                <a href="">Six Semester</a>
+                <a href="">Seventh Semester </a>
+                <a href="">Eighth Semester</a>
+                <a href="">TU Model Questions</a>
+                <a href="javascript:void();" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href=""><i class="fa fa-download"></i></a>
+
+            </div>
+            <script>
+                function myFunction() {
+                    var y = document.getElementById("myTopnav");
+                    if (y.className === "topnav") {
+                        y.className += " responsive";
+                    } else {
+                        y.className = "topnav";
+                    }
+                }
+            </script>        
+    </header>
+
+
+    <iframe id="pdfViewer" src="https://drive.google.com/file/d/1_gKqazK1uhdgl0UJZXIltmrMojNF8W_B/preview" width="100%"
+        height="700px"></iframe>
+
+
+</body>
+
+</html>
